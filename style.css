@@ -24,7 +24,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 12px;
-padding-left: 9px;
+/* padding-left: 9px; */
 }
 .container, h1{
     font-size: 45px;
@@ -48,18 +48,39 @@ button{
     border-radius: 5px;
     padding: 15px;
     cursor: pointer;
+}.copy{
+    width: 10%;
 }
 
+
+
+
+
+
 @media only screen and (max-width: 500px) {
-.container{
-margin-top: 50%;
-}
-.display{
-    width: 80%;
-}.container h1 span {
-    border: none;
-}.copy{
-    width: 13%;
-    /* border: 2px solid green; */
-}
-}
+    .container{
+    margin-top: 50%;
+    }
+    .display{
+        width: 83%;
+        
+    }.container h1 span {
+        border: none;
+    }.copy{
+        width: 13%;
+    }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .display{
+     width: 95%;
+
+     justify-content: flex-start;
+
+        }.copy{
+        margin: -10px;
+        }
+       .container input{
+           width: 95%;
+       }
+    }
